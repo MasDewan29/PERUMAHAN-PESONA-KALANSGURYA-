@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesona Kalangsurya - Perumahan Modern & Nyaman</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .hero-image {
+      background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                  url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/9fe11a17-a2df-4649-be59-fd0ada98e267.png') no-repeat center center;
+      background-size: cover;
+    }
+    
+    .facility-card:hover {
+      transform: translateY(-5px);
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial-card {
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    
+    @media (max-width: 768px) {
+      .hero-content {
+        padding-top: 100px;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50">
+  <!-- Header -->
+  <header class="bg-white shadow-md fixed w-full z-10">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/72487a12-045c-4c18-8603-ac72662883f0.png" 
+               alt="Logo Pesona Kalangsurya - Perumahan Modern dengan Taman Asri" 
+               class="h-10">
+        </div>
+        <nav class="hidden md:flex space-x-8">
+          <a href="#home" class="text-gray-700 hover:text-amber-600 font-medium">Beranda</a>
+          <a href="#about" class="text-gray-700 hover:text-amber-600 font-medium">Tentang</a>
+          <a href="#facilities" class="text-gray-700 hover:text-amber-600 font-medium">Fasilitas</a>
+          <a href="#gallery" class="text-gray-700 hover:text-amber-600 font-medium">Galeri</a>
+          <a href="#location" class="text-gray-700 hover:text-amber-600 font-medium">Lokasi</a>
+          <a href="#contact" class="text-gray-700 hover:text-amber-600 font-medium">Kontak</a>
+        </nav>
+        <button class="md:hidden text-gray-700 focus:outline-none">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-image h-screen flex items-center text-white">
+    <div class="container mx-auto px-6 hero-content">
+      <div class="max-w-lg">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Pesona Kalangsurya</h1>
+        <p class="text-xl md:text-2xl mb-8">Perumahan modern dengan konsep hunian asri dan fasilitas lengkap di lokasi strategis</p>
+        <div class="flex space-x-4">
+          <a href="#contact" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Hubungi Kami</a>
+          <a href="#gallery" class="bg-white hover:bg-gray-100 text-gray-800 px-6 py-3 rounded-lg font-medium transition duration-300">Lihat Galeri</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Tentang Pesona Kalangsurya</h2>
+        <div class="w-24 h-1 bg-amber-500 mx-auto"></div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <img src="perum10.jpg" 
+               alt="Konsep perumahan Pesona Kalangsurya dengan rumah modern minimalis dikelilingi taman hijau dan jalanan yang rapi" 
+               class="rounded-lg shadow-xl">
+        </div>
+        <div class="md:w-1/2">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Konsep Hunian Modern yang Asri</h3>
+          <p class="text-gray-600 mb-6">
+            Pesona Kalangsurya merupakan perumahan modern yang didesain untuk memberikan kenyamanan dan keamanan bagi penghuninya. 
+            Dengan tata letak yang terencana dan lingkungan yang asri, kami menawarkan kualitas hidup yang lebih baik bagi keluarga Anda.
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+              <span class="text-gray-700">Lokasi strategis dengan akses mudah ke pusat kota</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+              <span class="text-gray-700">Hunian berkualitas dengan berbagai pilihan tipe</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-check-circle text-amber-500 mr-3"></i>
+              <span class="text-gray-700">Lingkungan hijau yang nyaman dan asri</span>
+            </li>
+          </ul>
+          <div class="mt-10">
+            <a href="#facilities" class="text-amber-600 hover:text-amber-700 font-medium flex items-center">
+              Lihat fasilitas kami <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section id="facilities" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Fasilitas Unggulan</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Nikmati berbagai fasilitas modern yang dirancang untuk meningkatkan kualitas hidup Anda</p>
+        <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Facility 1 -->
+        <div class="facility-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-amber-500 mb-4">
+            <i class="fas fa-shield-alt text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Keamanan 24 Jam</h3>
+          <p class="text-gray-600">Sistem keamanan terpadu dengan patroli 24 jam dan CCTV di setiap area strategis menjamin keamanan penghuni.</p>
+        </div>
+        
+        <!-- Facility 2 -->
+        <div class="facility-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-amber-500 mb-4">
+            <i class="fas fa-tree text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Taman Hijau</h3>
+          <p class="text-gray-600">Area hijau yang luas dengan desain landscape profesional menciptakan lingkungan yang sehat dan nyaman.</p>
+        </div>
+        
+        <!-- Facility 3 -->
+        <div class="facility-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-amber-500 mb-4">
+            <i class="fas fa-swimming-pool text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Kolam Renang</h3>
+          <p class="text-gray-600">Kolam renang dengan standar keamanan tinggi untuk bersantai dan berolahraga bersama keluarga.</p>
+        </div>
+        
+        <!-- Facility 4 -->
+        <div class="facility-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-amber-500 mb-4">
+            <i class="fas fa-basketball-ball text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Area Olahraga</h3>
+          <p class="text-gray-600">Lapangan basket dan jogging track untuk menjaga kesehatan dan kebugaran penghuni.</p>
+        </div>
+        
+        <!-- Facility 5 -->
+        <div class="facility-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-amber-500 mb-4">
+            <i class="fas fa-child text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Taman Bermain</h3>
+          <p class="text-gray-600">Area bermain anak yang aman dan modern dengan berbagai permainan edukatif.</p>
+        </div>
+        
+        <!-- Facility 6 -->
+        <div class="facility-card bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+          <div class="text-amber-500 mb-4">
+            <i class="fas fa-wifi text-4xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3">Internet Fiber Optik</h3>
+          <p class="text-gray-600">Koneksi internet berkecepatan tinggi yang stabil untuk mendukung aktivitas digital penghuni.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Galeri Pesona Kalangsurya</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Lihat keindahan dan kenyamanan yang ditawarkan oleh perumahan kami</p>
+        <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Image 1 -->
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <img src="perum 2.jpg" 
+               alt="Tampak depan rumah tipe 36 di Pesona Kalangsurya dengan taman depan yang rapi dan desain eksterior modern" 
+               class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+          <div class="p-4 bg-white">
+          
+          </div>
+        </div>
+        
+        <!-- Image 2 -->
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <img src="perum 4.jpg" 
+               alt="Area taman hijau di tengah perumahan dengan jalan setapak dan lampu taman yang estetik" 
+               class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+          <div class="p-4 bg-white">
+        
+          </div>
+        </div>
+        
+        <!-- Image 3 -->
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <img src="perum12.jpg" 
+               alt="Kolam renang dengan area santai dan payung di sekitar, dikelilingi tanaman tropis" 
+               class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+          <div class="p-4 bg-white">
+          </div>
+        </div>
+        
+        <!-- Image 4 -->
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <img src="perum3.jpg" 
+               alt="Jalan utama perumahan yang lebar dan bersih dengan trotoar dan lampu jalan" 
+               class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+          <div class="p-4 bg-white">
+          </div>
+        </div>
+        
+        <!-- Image 5 -->
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <img src="perum11.jpg" 
+               alt="Area bermain anak dengan perosotan dan ayunan warna-warni serta permukaan yang aman" 
+               class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+          <div class="p-4 bg-white">
+          </div>
+        </div>
+        
+        <!-- Image 6 -->
+        <div class="overflow-hidden rounded-lg shadow-md hover:shadow-xl transition duration-300">
+          <img src="perum7.jpg" 
+               alt="Pintu masuk utama perumahan dengan pos security modern dan sistem kontrol akses" 
+               class="w-full h-64 object-cover hover:scale-105 transition duration-500">
+          <div class="p-4 bg-white">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lokasi Strategis</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Akses mudah ke berbagai fasilitas kota dengan lingkungan yang tenang</p>
+        <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Denah Lokasi</h3>
+          <p class="text-gray-600 mb-6">
+            Pesona Kalangsurya terletak di lokasi strategis yang mudah diakses dari berbagai arah. Hanya 10 menit dari pusat kota dan dekat dengan berbagai fasilitas umum seperti sekolah, rumah sakit, dan pusat perbelanjaan.
+          </p>
+          
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Alamat</h4>
+                <p class="text-gray-600"> Perum pesona kalangsuria, desa, Kalangsurya, Kec. Rengasdengklok, Karawang, Jawa Barat 41352 </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-road"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Akses Transportasi</h4>
+                <p class="text-gray-600">Dekat jalan utama rengasdengklok dan dekat ke karawang kota</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-store"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Fasilitas Terdekat</h4>
+                <p class="text-gray-600">10 menit ke pusat perbelanjaan dan rumah sakit dan 30 menit ke mall karawang</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2 bg-gray-200 rounded-lg overflow-hidden">
+          <!-- Google Maps Embed -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9238304280233!2d107.60181961423573!3d-6.894257995020692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e64a3e3b34b3%3A0x9e70e5a0672a9ad1!2sPesona%20Kalangsurya!5e0!3m2!1sid!2sid!4v1621234567890!5m2!1sid!2sid" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"
+            class="rounded-lg"
+            title="Peta Lokasi Pesona Kalangsurya">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-20 bg-gray-800 text-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Apa Kata Mereka</h2>
+        <p class="max-w-2xl mx-auto opacity-80">Testimoni dari penghuni Pesona Kalangsurya</p>
+        <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card p-8 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7f6ded9e-35a7-4a81-91c4-4e2c7137c801.png" 
+                 alt="Potret keluarga bahagia penghuni Pesona Kalangsurya"
+                 class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-semibold text-gray-800">Keluarga Setiawan</h4>
+              <div class="flex text-amber-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Sudah 3 tahun kami tinggal di Pesona Kalangsurya dan sangat puas dengan fasilitas dan keamanannya. Lingkungannya asri dan tetangganya ramah. Sangat cocok untuk keluarga!"
+          </p>
+        </div>
+        
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card p-8 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fffd542d-1865-422b-aeb4-f01cfd52bf48.png" 
+                 alt="Potret profesional muda penghuni Pesona Kalangsurya"
+                 class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-semibold text-gray-800">Budi Santoso</h4>
+              <div class="flex text-amber-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Sebagai karyawan yang sering pulang malam, saya sangat menghargai sistem keamanan 24 jam di sini. Juga dekat dengan kantor sehingga bisa menghemat waktu perjalanan."
+          </p>
+        </div>
+        
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card p-8 rounded-lg shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7db97857-d45d-436f-a3a7-c54caf8620fa.png" 
+                 alt="Potret pasangan pensiunan penghuni Pesona Kalangsurya"
+                 class="w-12 h-12 rounded-full object-cover mr-4">
+            <div>
+              <h4 class="font-semibold text-gray-800">Ibu Suryati</h4>
+              <div class="flex text-amber-500">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600 italic">
+            "Saya dan suami memilih pensiun di sini karena lingkungannya tenang dan ada banyak fasilitas kesehatan di sekitar. Taman-tamannya luas jadi cocok untuk jalan pagi."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Informasi lebih lanjut tentang Pesona Kalangsurya</p>
+        <div class="w-24 h-1 bg-amber-500 mx-auto mt-4"></div>
+      </div>
+      
+      <div class="flex flex-col md:flex-row">
+        <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Kantor Penjualan</h3>
+          
+          <div class="space-y-6">
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Alamat</h4>
+                <p class="text-gray-600">Kantor Pemasaran Perumahan pesona kalang suria blok c7 no11 (andy property) dsa.karyasari, kec.Rengas Dengklok, kab.Karawang, prv Jawa Barat, Karyasari, Kec. R.Dengklok, Karawang, Jawa Barat 41352   </p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Telepon</h4>
+                <p class="text-gray-600">0823-1307-2344</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Email</h4>
+                <p class="text-gray-600">Perumpesonakalangsurya@gmail.com</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start">
+              <div class="text-amber-500 mr-3 mt-1">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h4 class="font-medium text-gray-800">Jam Operasional</h4>
+                <p class="text-gray-600">Senin - Minggu: 08.00 - 17.00 WIB</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mt-10">
+            <h4 class="font-medium text-gray-800 mb-4">Ikuti Kami</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-600 hover:text-amber-500">
+                <i class="fab fa-facebook-f text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-600 hover:text-amber-500">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-600 hover:text-amber-500">
+                <i class="fab fa-youtube text-xl"></i>
+              </a>
+              <a href="#" class="text-gray-600 hover:text-amber-500">
+                <i class="fab fa-whatsapp text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="md:w-1/2">
+          <form class="bg-gray-50 p-8 rounded-lg shadow-md">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+              </div>
+              <div>
+                <label for="phone" class="block text-gray-700 font-medium mb-2">No. Telepon</label>
+                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+              </div>
+              <div>
+                <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+              </div>
+              <div>
+                <label for="subject" class="block text-gray-700 font-medium mb-2">Subjek</label>
+                <select id="subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500">
+                  <option value="">Pilih Subjek</option>
+                  <option value="info">Informasi Umum</option>
+                  <option value="booking">Booking Rumah</option>
+                  <option value="complaint">Keluhan/Saran</option>
+                  op
+                </select>
+              </div>
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-gray-700 font-medium mb-2">Pesan</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-amber-600 hover:bg-amber-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+        <div>
+          <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c5dae79e-524a-4eda-ad51-c81f60d73cba.png" 
+               alt="Logo Footer Pesona Kalangsurya" 
+               class="h-10 mb-4">
+          <p class="text-gray-400 mb-4">
+            Pesona Kalangsurya - Perumahan modern dengan konsep hunian asri dan fasilitas lengkap.
+          </p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Beranda</a></li>
+            <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">Tentang Kami</a></li>
+            <li><a href="#facilities" class="text-gray-400 hover:text-white transition duration-300">Fasilitas</a></li>
+            <li><a href="#gallery" class="text-gray-400 hover:text-white transition duration-300">Galeri</a></li>
+            <li><a href="#location" class="text-gray-400 hover:text-white transition duration-300">Lokasi</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+          <ul class="space-y-2 text-gray-400">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-2 text-amber-500"></i>
+              <span>Jl. Kalangsurya Raya No. 123</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-phone mt-1 mr-2 text-amber-500"></i>
+              <span>(021) 1234 5678</span>
+            </li>
+            <li class="flex items-start">
+              <i class="fas fa-envelope mt-1 mr-2 text-amber-500"></i>
+              <span>info@pesonakalangsurya.com</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div>
+          <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+          <p class="text-gray-400 mb-4">Berlangganan untuk mendapatkan info terbaru dan promo menarik</p>
+          <form class="flex">
+            <input type="email" placeholder="Email Anda" class="px-4 py-2 w-full rounded-l-lg focus:outline-none text-gray-900">
+            <button type="submit" class="bg-amber-600 hover:bg-amber-700 px-4 py-2 rounded-r-lg transition duration-300">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
+        <p class="text-gray-500 text-sm mb-4 md:mb-0">
+          © 2023 Pesona Kalangsurya. Semua hak dilindungi.
+        </p>
+        <div class="flex space-x-6">
+          <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Kebijakan Privasi</a>
+          <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">Syarat & Ketentuan</a>
+          <a href="#" class="text-gray-500 hover:text-white text-sm transition duration-300">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Simple mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+      const mobileMenuButton = document.querySelector('.md\\:hidden');
+      const navMenu = document.querySelector('nav');
+      
+      mobileMenuButton.addEventListener('click', function() {
+        navMenu.classList.toggle('hidden');
+        navMenu.classList.toggle('flex');
+        navMenu.classList.toggle('flex-col');
+        navMenu.classList.toggle('absolute');
+        navMenu.classList.toggle('top-16');
+        navMenu.classList.toggle('right-6');
+        navMenu.classList.toggle('bg-white');
+        navMenu.classList.toggle('p-4');
+        navMenu.classList.toggle('rounded-lg');
+        navMenu.classList.toggle('shadow-lg');
+        navMenu.classList.toggle('space-y-4');
+        navMenu.classList.toggle('space-x-0');
+      });
+      
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: 'smooth'
+            });
+            
+            // Close mobile menu if open
+            if (!navMenu.classList.contains('hidden')) {
+              mobileMenuButton.click();
+            }
+          }
+        });
+      });
+      
+      // Form submission
+      const contactForm = document.querySelector('form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          alert('Terima kasih atas pesan Anda. Kami akan segera menghubungi Anda kembali.');
+          this.reset();
+        });
+      }
+    });
+  </script>
+</body>
+</html>
+
